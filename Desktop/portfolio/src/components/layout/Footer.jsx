@@ -53,7 +53,7 @@ export default function Footer() {
             <span className="text-cyan-400" aria-label="love">
               ♥
             </span>
-            using React & AI
+            using React
           </p>
         </div>
       </div>
