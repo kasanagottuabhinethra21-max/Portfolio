@@ -34,12 +34,10 @@ export default function Contact() {
       `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`,
     )
 
-    setTimeout(() => {
-      window.location.href = `mailto:${personal.email}?subject=${subject}&body=${body}`
-      setStatus('sent')
-      setForm({ name: '', email: '', message: '' })
-      setTimeout(() => setStatus('idle'), 3000)
-    }, 600)
+    window.location.href = `mailto:${personal.email}?subject=${subject}&body=${body}`
+    setStatus('sent')
+    setForm({ name: '', email: '', message: '' })
+    setTimeout(() => setStatus('idle'), 3000)
   }
 
   return (
